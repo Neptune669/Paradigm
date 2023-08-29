@@ -1,5 +1,5 @@
-// import hero from "./assets/pexels-anna-shvets-5325104.jpg";
-import hero2 from "./assets/pexels-luis-quintero-2774556.jpg";
+import event from "./assets/event.png";
+import hero from "./assets/event two.png";
 
 const Event = () => {
   return (
@@ -15,10 +15,10 @@ const Event = () => {
           <p className="text-[1rem]">View all events</p>
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid grid-cols-2 gap-10">
         <div className="flex flex-col gap-4">
           <div className="">
-            <img className="h-[350px] object-cover" src={hero2} alt="" />
+            <img className=" object-cover" src={event} alt="" />
           </div>
           <div className="flex flex-col ">
             <h2 className="text-lg">NCHR EGYPT</h2>
@@ -27,7 +27,7 @@ const Event = () => {
         </div>
         <div className="flex flex-col gap-4">
           <div className="">
-            <img className="h-[350px] object-cover" src={hero2} alt="" />
+            <img className=" object-cover" src={hero} alt="" />
           </div>
           <div className="flex flex-col ">
             <h2 className="text-lg">NCHR EGYPT</h2>

@@ -1,8 +1,14 @@
-import mac from "./assets/icons8-imac-50 (1).png";
-import fire from "./assets/icons8-fire-64.png";
-import it from "./assets/icons8-it-50.png";
-import tran from "./assets/icons8-translator-50.png";
-import chef from "./assets/icons8-chef-hat-50.png";
+import mac from "./assets/Graphic Design.svg";
+import chef from "./assets/Catering.svg";
+import it from "./assets/Technical Support.svg";
+import tran from "./assets/Interpretation & Translation Services.svg";
+import fire from "./assets/Entertainment.svg";
+import event from "./assets/Event Consultancy & Management..svg";
+import media from "./assets/Documentation & Media Production.svg";
+import vip from "./assets/Public Relations & VIP Management..svg";
+import brand from "./assets/Branding, Production, and Printing.svg";
+import travel from "./assets/Travel, Transportation & Accommodation.svg";
+import audio from "./assets/Audio Visual Solutions.svg";
 
 const Service = () => {
   return (
@@ -51,7 +57,7 @@ const Service = () => {
           </a>
           <div className="p-5">
             <a href="#">
-              <img style={{ width: "50px" }} src={fire} alt="" />
+              <img src={fire} alt="" />
             </a>
             <p className="mb-3 font-normal text-white mt">Entreatment</p>
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
@@ -149,7 +155,7 @@ const Service = () => {
           </a>
           <div className="p-5">
             <a href="#">
-              <img src={mac} alt="" />
+              <img src={event} alt="" />
             </a>
             <p className="mb-3 font-normal text-white mt">Graphic design</p>
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
@@ -173,7 +179,7 @@ const Service = () => {
           </a>
           <div className="p-5">
             <a href="#">
-              <img src={mac} alt="" />
+              <img src={media} alt="" />
             </a>
             <p className="mb-3 font-normal text-white mt">Graphic design</p>
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
@@ -197,7 +203,7 @@ const Service = () => {
           </a>
           <div className="p-5">
             <a href="#">
-              <img src={mac} alt="" />
+              <img src={vip} alt="" />
             </a>
             <p className="mb-3 font-normal text-white mt">Graphic design</p>
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
@@ -221,7 +227,7 @@ const Service = () => {
           </a>
           <div className="p-5">
             <a href="#">
-              <img src={mac} alt="" />
+              <img src={brand} alt="" />
             </a>
             <p className="mb-3 font-normal text-white mt">Graphic design</p>
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
@@ -245,7 +251,7 @@ const Service = () => {
           </a>
           <div className="p-5">
             <a href="#">
-              <img src={mac} alt="" />
+              <img src={audio} alt="" />
             </a>
             <p className="mb-3 font-normal text-white mt">Graphic design</p>
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
@@ -269,7 +275,7 @@ const Service = () => {
           </a>
           <div className="p-5">
             <a href="#">
-              <img src={mac} alt="" />
+              <img src={travel} alt="" />
             </a>
             <p className="mb-3 font-normal text-white mt">Graphic design</p>
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
