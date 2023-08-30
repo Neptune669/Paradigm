@@ -1,4 +1,4 @@
-import mac from "./assets/Graphic Design.svg";
+// import mac from "./assets/Graphic Design.svg";
 // import chef from "./assets/Catering.svg";
 import it from "./assets/Technical Support.svg";
 import tran from "./assets/Interpretation & Translation Services.svg";
