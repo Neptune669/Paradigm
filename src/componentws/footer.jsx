@@ -10,7 +10,7 @@ const Footer = () => {
           Bringing your Brand to life in digital world
         </p>
       </div>
-      <div className="grid grid-cols-4 gap-24 mt-5">
+      <div className="grid grid-cols-1 lg:grid-cols-4 lg:gap-24 gap-10 mt-5">
         <div className="">
           <ul className="flex flex-col gap-4">
             <li>10 Nile st, oula, Giza district , Cairo Governorate </li>
@@ -37,7 +37,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="">
-          <ul className="flex flex-col gap-4 items-center">
+          <ul className="flex flex-col gap-4 items-end">
             <li>
               2023 Paradigm.All rights <br />
               <span className="flex flex-row-reverse">reserved</span>

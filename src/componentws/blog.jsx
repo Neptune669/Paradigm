@@ -38,7 +38,7 @@ const blogs = [
 ];
 const BlogPostsList = () => {
   return (
-    <div className="max-w-7xl mx-auto p-8 ">
+    <div className="max-w-7xl mx-auto p-8 px-8 lg:px-0 ">
       <p className="text-[#48AECD] uppercase text-sm font-semibold mb-2">
         Blog
       </p>
@@ -72,7 +72,7 @@ const BlogPostsList = () => {
           </span>
         </p>
       </div>{" "}
-      <ul className="grid grid-cols-3 gap-14">
+      <ul className="grid grid-cols-1 lg:grid-cols-3 gap-14">
         {blogs.map((blog, index) => {
           return <CardPreview key={index} {...blog} />;
         })}

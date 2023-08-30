@@ -3,14 +3,14 @@ import hero from "../assets/event two.png";
 
 const Event = () => {
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto px-10 lg:px-0">
       <p className="text-[#48AECD] uppercase text-sm font-semibold mb-2">
         portfolio
       </p>
       <div className="flex justify-between items-center mb-16">
-        <h2 className="text-4xl font-medium">Our Recent Events.</h2>
-        <p className="font-semibold flex items-center gap-1">
-          <span>View all events</span>
+        <h2 className="text-3xl lg:text-4xl font-medium">Our Recent Events.</h2>
+        <p className="font-semibold flex items-center gap-0 lg:gap-1">
+          <span className="text-sm lg:text-3xl">View all events</span>
           <span>
             <svg
               width="18"
