@@ -4,7 +4,7 @@ const Nav = () => {
   return (
     <nav className="px-8 lg:px-0 max-w-7xl mx-auto my-9 flex justify-between ">
       <div className="">
-        <img className="" src={logo} alt="" />
+        <img className="w-[100px] lg:w-full" src={logo} alt="" />
       </div>
       <div className="lg:flex gap-6 hidden ">
         <Link className="text-[18px] font-[500]" to="/">
