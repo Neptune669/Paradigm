@@ -12,7 +12,7 @@ import audio from "./assets/Audio Visual Solutions.svg";
 
 const Service = () => {
   return (
-    <div className="max-w-[800px] mx-auto mt-14">
+    <div className="max-w-7xl mx-auto mt-14">
       <div className="">
         <p className="text-[#48AECD]">Our services </p>
       </div>

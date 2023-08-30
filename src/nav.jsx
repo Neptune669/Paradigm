@@ -1,16 +1,27 @@
 import { Link } from "react-router-dom";
+import logo from "./assets/Vector.svg";
 const Nav = () => {
   return (
-    <nav className="max-w-[800px] mx-auto my-9 flex justify-between font-inter">
+    <nav className="max-w-7xl mx-auto my-9 flex justify-between ">
       <div className="">
-        <h1 className="uppercase ">pardigm</h1>
+        <img src={logo} alt="" />
       </div>
       <div className="flex gap-6">
-        <Link to="/">About us</Link>
-        <Link to="/">Services</Link>
-        <Link to="/">sustainability</Link>
-        <Link to="/">Events</Link>
-        <Link to="/">Contact</Link>
+        <Link className="text-[18px] font-[500]" to="/">
+          About us
+        </Link>
+        <Link className="text-[18px] font-[500]" to="/">
+          Services
+        </Link>
+        <Link className="text-[18px] font-[500]" to="/">
+          sustainability
+        </Link>
+        <Link className="text-[18px] font-[500]" to="/">
+          Events
+        </Link>
+        <Link className="text-[18px] font-[500]" to="/">
+          Contact
+        </Link>
       </div>
     </nav>
   );

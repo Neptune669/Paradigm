@@ -1,6 +1,6 @@
 const Blog = () => {
   return (
-    <div className="max-w-[800px] mx-auto mt-[8rem] p-8 ">
+    <div className="max-w-7xl mx-auto mt-[8rem] p-8 ">
       <p className="text-[#48AECD]">Blogs</p>
       <div className="grid grid-cols-3 gap-14 mt-6">
         <div className="relative grid h-[20rem] w-[15rem] max-w-[35rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700">

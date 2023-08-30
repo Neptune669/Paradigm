@@ -3,7 +3,7 @@ import hero from "./assets/event two.png";
 
 const Event = () => {
   return (
-    <div className="max-w-[800px] mx-auto mt-[8rem] pb-5">
+    <div className="max-w-7xl mx-auto mt-[8rem] pb-5">
       <div className="">
         <p className="text-[#48AECD]">portfolio</p>
       </div>
