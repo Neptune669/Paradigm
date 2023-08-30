@@ -1,4 +1,3 @@
-import icon from "./assets/Rectangle.png";
 import Marquee from "react-fast-marquee";
 const Trust = () => {
 	const logos = [
@@ -49,10 +48,12 @@ const Trust = () => {
 		},
 	];
 	return (
-		<div className="mt-[8rem]  mx-auto">
-			<p className="text-[#48AECD] text-center font-semibold text-sm uppercase mb-10">
-				Trusted by the world's best Brands
-			</p>
+		<div className="mt-20 ">
+			<div className=" max-w-fit mx-auto ">
+				<p className="text-[#48AECD] text-center font-semibold text-sm uppercase mb-10">
+					Trusted by the world's best Brands
+				</p>
+			</div>
 			<Marquee pauseOnHover className="flex gap-5">
 				<div className="flex items-center gap-5">
 					<div className="">

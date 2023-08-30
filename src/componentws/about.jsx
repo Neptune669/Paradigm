@@ -1,7 +1,7 @@
-import timer from "./assets/timer.svg";
-import ticket from "./assets/ticket.svg";
-import star from "./assets/star.svg";
-import rocket from "./assets/rocket.svg";
+import timer from "../assets/timer.svg";
+import ticket from "../assets/ticket.svg";
+import star from "../assets/star.svg";
+import rocket from "../assets/rocket.svg";
 
 const About = () => {
 	return (

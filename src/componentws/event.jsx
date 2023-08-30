@@ -1,5 +1,5 @@
-import event from "./assets/event.png";
-import hero from "./assets/event two.png";
+import event from "../assets/event.png";
+import hero from "../assets/event two.png";
 
 const Event = () => {
 	return (
@@ -37,8 +37,8 @@ const Event = () => {
 					</span>
 				</p>
 			</div>
-			<div className="grid grid-cols-2 gap-10">
-				<div className="flex flex-col gap-10">
+			<ul className="grid grid-cols-2 gap-10">
+				<li className="flex flex-col gap-10">
 					<figure className="rounded-2xl aspect-square">
 						<img
 							className=" object-cover rounded-2xl aspect-square"
@@ -74,8 +74,8 @@ const Event = () => {
 							</svg>
 						</a>{" "}
 					</div>
-				</div>
-				<div className="flex flex-col gap-10">
+				</li>
+				<li className="flex flex-col gap-10">
 					<figure className="rounded-2xl aspect-squre">
 						<img
 							className=" object-cover rounded-2xl aspect-square"
@@ -111,8 +111,8 @@ const Event = () => {
 							</svg>
 						</a>
 					</div>
-				</div>
-			</div>
+				</li>
+			</ul>
 		</div>
 	);
 };

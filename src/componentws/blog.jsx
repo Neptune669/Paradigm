@@ -33,7 +33,7 @@ const blogs = [
 		date: "April 1, 2022",
 	},
 ];
-const Blog = () => {
+const BlogPostsList = () => {
 	return (
 		<div className="max-w-7xl mx-auto p-8 ">
 			<p className="text-[#48AECD] uppercase text-sm font-semibold mb-2">
@@ -78,4 +78,4 @@ const Blog = () => {
 	);
 };
 
-export default Blog;
+export default BlogPostsList;
