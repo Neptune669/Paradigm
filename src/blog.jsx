@@ -1,3 +1,38 @@
+const CardPreview = ({ title, image, date }) => {
+	return (
+		<li className="relative h-80 flex flex-col justify-end  overflow-hidden rounded-xl bg-white shadow-none ">
+			{image && (
+				<figure className="rounded-xl">
+					<img
+						src={image}
+						className="absolute inset-0 h-full w-full overflow-hidden rounded-xl bg-transparent bg-cover bg-center"
+					/>
+				</figure>
+			)}
+			<div className="relative pl-3 pr-12 pb-4 font-semibold">
+				<h3 className="text-white text-2xl mb-3">{title}</h3>
+				<h4 className=" uppercase text-sm">{date}</h4>
+			</div>
+		</li>
+	);
+};
+const blogs = [
+	{
+		title: "What Event Organizers Need to Know",
+		image: "",
+		date: "April 1, 2022",
+	},
+	{
+		title: "What Event Organizers Need to Know",
+		image: "",
+		date: "April 1, 2022",
+	},
+	{
+		title: "What Event Organizers Need to Know",
+		image: "",
+		date: "April 1, 2022",
+	},
+];
 const Blog = () => {
 	return (
 		<div className="max-w-7xl mx-auto p-8 ">
@@ -34,22 +69,11 @@ const Blog = () => {
 					</span>
 				</p>
 			</div>{" "}
-			<div className="grid grid-cols-3 gap-14">
-				<div className="relative h-80 flex flex-col justify-end  overflow-hidden rounded-xl bg-white shadow-none ">
-					<figure className="rounded-xl">
-						<img
-							src="https://images.pexels.com/photos/3379261/pexels-photo-3379261.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-							className="absolute inset-0 h-full w-full overflow-hidden rounded-xl bg-transparent bg-cover bg-center"
-						/>
-					</figure>
-					<div className="relative pl-3 pr-12 pb-4 font-semibold">
-						<h3 className="text-white text-2xl mb-3">
-							What Event Organizers Need to Know
-						</h3>
-						<h4 className=" uppercase text-sm">APril 1.2022</h4>
-					</div>
-				</div>
-			</div>
+			<ul className="grid grid-cols-3 gap-14">
+				{blogs.map((blog, index) => {
+					return <CardPreview key={index} {...blog} />;
+				})}
+			</ul>
 		</div>
 	);
 };
