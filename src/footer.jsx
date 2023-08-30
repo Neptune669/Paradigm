@@ -38,7 +38,9 @@ const Footer = () => {
         </div>
         <div className="">
           <ul className="flex flex-col gap-4">
-            <li>2023 Paradigm.All rights reserved</li>
+            <li>
+              2023 Paradigm.All rights <br /> reserved
+            </li>
           </ul>
         </div>
       </div>
