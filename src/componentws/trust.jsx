@@ -22,7 +22,7 @@ const Trust = () => {
 		});
 	}
 	return (
-		<div className="mt-20 ">
+		<div className="mt-20">
 			<div className=" max-w-fit mx-auto ">
 				<p className="text-[#48AECD] text-center font-semibold text-sm uppercase mb-10">
 					Trusted by the world&apos;s best Brands

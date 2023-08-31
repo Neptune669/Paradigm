@@ -204,7 +204,7 @@ const SliderWrapper = styled.div`
 		transform: translate(-50%, -50%);
 		display: block;
 
-		width: 95%;
+		width: 100%;
 		padding: 0;
 		margin: auto;
 		display: flex;
