@@ -3,13 +3,14 @@ const CardPreview = ({ title, image, date }) => {
 		<li className="relative h-80 flex flex-col justify-end  overflow-hidden rounded-xl bg-white shadow-none ">
 			{image && (
 				<figure className="rounded-xl">
+					<div className="absolute z-20 inset-0 bg-gradient-to-b from-transparent to-black opacity-50"></div>
 					<img
 						src={image}
-						className="absolute inset-0 h-full w-full overflow-hidden rounded-xl bg-transparent bg-cover bg-center"
+						className="absolute inset-0 z-10 h-full w-full overflow-hidden rounded-xl bg-transparent bg-cover bg-center"
 					/>
 				</figure>
 			)}
-			<div className="relative pl-3 pr-12 pb-4 font-semibold">
+			<div className="relative pl-3 pr-12 pb-4 font-semibold z-30">
 				<h3 className="text-white text-2xl mb-3">{title}</h3>
 				<h4 className=" uppercase text-sm">{date}</h4>
 			</div>

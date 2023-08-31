@@ -177,7 +177,14 @@ export default function NotFound() {
 							</clipPath>
 						</defs>
 					</svg>
-					<h1 className="text-2xl font-medium">Oops! You seem to be lost.</h1>
+					<h1 className="text-2xl font-medium mb-4">⚠️ Under Construction</h1>
+					<p className=" opacity-80 text-center">
+						We apologize for the inconvenience, but this page is currently
+						undergoing enhancements to provide you with an even better <br />
+						experience. Our team is hard at work to bring you fresh and exciting
+						content. We appreciate your understanding <br /> and can't wait to
+						showcase the results!
+					</p>
 					<Link className="  underline px-10 py-2 font-bold rounded-lg" to="/">
 						Back To Home
 					</Link>

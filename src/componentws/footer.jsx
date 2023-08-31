@@ -19,7 +19,7 @@ const Footer = () => {
 						<a href="tel:+20102655200"> 0102655200</a>
 					</li>
 					<li>
-						Emil Us : <a href="mailto:hi@paradigm-eg.com">hi@paradigm-eg.com</a>
+						<a href="mailto:hi@paradigm-eg.com">hi@paradigm-eg.com</a>
 					</li>
 				</ul>
 				<ul className="flex flex-col gap-4">

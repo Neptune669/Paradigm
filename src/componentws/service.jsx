@@ -21,11 +21,7 @@ const Card = ({ icon, title, description, link = "#" }) => {
 			{title && (
 				<h3 className="mb-3 text-2xl font-semibold text-white">{title}</h3>
 			)}
-			{description && (
-				<p className=" font-normal text-gray-700 dark:text-gray-400 mb-14">
-					Event consultancy & Management
-				</p>
-			)}
+			{description && <p className="  opacity-50 mb-14">{description}</p>}
 			<a
 				href={link}
 				className="px-3 py-2 lg:self-end flex items-center gap-1 text-sm font-medium  mt-auto "
