@@ -3,23 +3,23 @@ import logo from "../assets/Vector.svg";
 const Nav = () => {
 	return (
 		<nav className="px-8 max-w-7xl mx-auto my-9 flex justify-between">
-			<div className="">
+			<Link to="/">
 				<img className="w-[200px] lg:w-full" src={logo} alt="" />
-			</div>
+			</Link>
 			<div className="lg:flex gap-6 hidden ">
-				<Link className="text-lg font-medium" to="/">
+				<Link className="text-lg font-medium" to="/about">
 					About us
 				</Link>
-				<Link className="text-lg font-medium" to="/">
+				<Link className="text-lg font-medium" to="/services">
 					Services
 				</Link>
-				<Link className="text-[18px] font-medium" to="/">
+				<Link className="text-[18px] font-medium" to="/sustainability">
 					Sustainability
 				</Link>
-				<Link className="text-lg font-medium" to="/">
+				<Link className="text-lg font-medium" to="/events">
 					Events
 				</Link>
-				<Link className="text-lg font-medium" to="/">
+				<Link className="text-lg font-medium" to="/contact">
 					Contact
 				</Link>
 			</div>
