@@ -7,19 +7,19 @@ const Nav = () => {
         <img className="w-[100px] lg:w-full" src={logo} alt="" />
       </div>
       <div className="lg:flex gap-6 hidden ">
-        <Link className="text-[18px] font-[500]" to="/">
+        <Link className="text-lg font-medium" to="/">
           About us
         </Link>
-        <Link className="text-[18px] font-[500]" to="/">
+        <Link className="text-lg font-medium" to="/">
           Services
         </Link>
-        <Link className="text-[18px] font-[500]" to="/">
+        <Link className="text-[18px] font-medium" to="/">
           sustainability
         </Link>
-        <Link className="text-[18px] font-[500]" to="/">
+        <Link className="text-lg font-medium" to="/">
           Events
         </Link>
-        <Link className="text-[18px] font-[500]" to="/">
+        <Link className="text-lg font-medium" to="/">
           Contact
         </Link>
       </div>

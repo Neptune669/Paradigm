@@ -76,9 +76,9 @@ const Event = () => {
           </div>
         </li>
         <li className="flex flex-col gap-10">
-          <figure className="rounded-2xl aspect-squre">
+          <figure className="rounded-2xl lg:aspect-square ">
             <img
-              className=" object-cover rounded-2xl aspect-square"
+              className=" object-cover  rounded-2xl aspect-square"
               src={hero}
               alt=""
             />

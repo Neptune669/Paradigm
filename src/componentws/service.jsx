@@ -94,11 +94,11 @@ const Service = () => {
         Our services{" "}
       </p>
       <div className="flex justify-between items-center mb-16">
-        <h2 className="text-3xl lg:text-4xl font-medium">
-          High-impact marketing services to <br /> grow your startup
+        <h2 className="text-sm lg:text-4xl font-medium">
+          High-impact marketing <br /> services to grow your startup
         </h2>
-        <p className="font-semibold flex items-center gap-1">
-          <span>View all events</span>
+        <p className="font-semibold flex items-center justify-end  gap-0 lg:gap-1">
+          <span className=" text-left">View all events</span>
           <span>
             <svg
               width="18"
