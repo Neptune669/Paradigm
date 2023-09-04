@@ -11,3 +11,10 @@ body {
   color: #fff;
   font-family: "Montserrat", sans-serif;
 }
+.bg-svg {
+  background-image: url(../src/assets/bg.svg);
+}
+
+.p-main {
+  color: #50c1e4;
+}
