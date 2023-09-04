@@ -1,5 +1,3 @@
-import React from "react";
-
 const SectionWithImage = ({
   header,
   title,
@@ -7,21 +5,25 @@ const SectionWithImage = ({
   image,
   flexDirection,
   textColor,
+  fontSize,
 }) => {
   const containerStyle = `flex items-center justify-between ${flexDirection}`;
 
   return (
     <div className={containerStyle}>
       <div className="">
-        {header && <p className="text-xs p-main">{header}</p>}
-        {title && <h2 className="text-4xl font-bold">{title}</h2>}
+        {header && <p className="mb-3 text-sm p-main">{header}</p>}
+        {title && <h2 className="mb-3 text-4xl font-bold">{title}</h2>}
         {text && (
-          <p className="max-w-md" style={{ color: textColor }}>
+          <p
+            className="max-w-md"
+            style={{ color: textColor, fontSize: fontSize }}
+          >
             {text}
           </p>
         )}
       </div>
-      <div className="max-w-xl">
+      <div className="max-w-md">
         {image && (
           <figure>
             <img src={image} alt="" />

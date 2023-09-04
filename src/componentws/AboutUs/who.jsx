@@ -30,7 +30,7 @@ const Who = () => {
         title="Our Story"
         text="Guided by 15 years of Scouts values, followed by professional academic training between Egypt and the UK over a span of 3 years under the Young Leaders programme, a collaboration between the British Council in Egypt & the UK, and the UK Ministry of Youth & Sports. Our group of founders graduated the Events Managers Training programme followed by TOT for Events Managers, which paved the way to form the Paradigm vision."
         image={back}
-        textColor="#FFFFFF"
+        textColor="#505050"
       />
     </div>
   );

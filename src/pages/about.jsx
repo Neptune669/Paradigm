@@ -4,20 +4,28 @@ import Who from "../componentws/AboutUs/who";
 import Vision from "../componentws/AboutUs/vision";
 import Mission from "../componentws/AboutUs/mission";
 import Ceo from "../componentws/AboutUs/ceo";
+import Footer from "../componentws/footer";
+import Team from "../componentws/AboutUs/team";
+import CeoTwo from "../componentws/AboutUs/CeoTwo";
 const AboutUs = () => {
   return (
-    <div>
-      <div>
+    <>
+      <header>
         <Nav />
-      </div>
-      <div className="px-8 mx-auto max-w-7xl">
+      </header>
+      <main>
         <About />
         <Who />
+      </main>
+      <div className="flex flex-col gap-16 mx-auto overflow-x-hidden max-w-7xl ">
         <Vision />
         <Mission />
         <Ceo />
+        <CeoTwo />
+        <Team />
       </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 
