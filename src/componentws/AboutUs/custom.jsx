@@ -7,7 +7,7 @@ const SectionWithImage = ({
   textColor,
   fontSize,
 }) => {
-  const containerStyle = `flex flex-col gap-10  md:flex-row px-8  justify-between ${flexDirection}`;
+  const containerStyle = `flex flex-col gap-10  px-8 md:flex-row justify-between ${flexDirection}`;
 
   return (
     <div className={containerStyle}>

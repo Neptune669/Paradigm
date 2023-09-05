@@ -15,7 +15,7 @@ const ceo = () => {
         
         “For one thing, there’s an essential human factor in every business endeavor. It doesn’t matter if you have a perfect product, production plan and marketing pitch; you’ll still need the right people to lead and implement those plans.”  - Bill Gates"
         image={log}
-        flexDirection={"flex-row-reverse"}
+        flexDirection={"md:flex-row-reverse"}
         textColor="#505050"
         fontSize="18px"
       />
