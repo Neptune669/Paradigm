@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <div className="px-8 mx-auto mt-16 bg-center bg-cover mb-28 max-w-7xl ">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
         <div className="">
           <h1 className="text-[5.625rem] font-bold">About</h1>
           <p className="text-[#C0C0C0] ">
@@ -10,7 +10,7 @@ const About = () => {
             <br /> urna curabitur feugiat viverra feugiat scelerisque.
           </p>
         </div>
-        <div className="">
+        <div className="w-fit">
           <svg
             width="370"
             height="459"

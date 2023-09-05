@@ -8,7 +8,7 @@ const Team = () => {
   return (
     <div className="grid gap-10">
       <SectionWithImage header="Behind Every Success" title="Our Team" />
-      <div className="grid grid-cols-3 gap-10">
+      <div className="grid gap-10 max-w-fit md:grid-cols-2 lg:grid-cols-3">
         <ImageWithBackground img={img} />
         <ImageWithBackground img={img} />
         <ImageWithBackground img={imgTwo} />
