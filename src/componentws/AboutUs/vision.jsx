@@ -1,7 +1,7 @@
 import SectionWithImage from "./custom";
 import eye from "../AboutUs/eye.svg";
 
-const Section = [
+const VisionSection = [
   {
     image: eye,
     header: "Our Vision",
@@ -14,7 +14,7 @@ const Section = [
 const Vision = () => {
   return (
     <>
-      {Section.map((item, index) => (
+      {VisionSection.map((item, index) => (
         <SectionWithImage key={index} {...item} />
       ))}
     </>

@@ -1,6 +1,6 @@
 import SectionWithImage from "./custom";
 import log from "../AboutUs/log.svg";
-const Section = [
+const CeoSection = [
   {
     header: "ceo word",
     title: "Formula Of Success",
@@ -16,7 +16,7 @@ const Section = [
 const ceo = () => {
   return (
     <div className="">
-      {Section.map((item, index) => (
+      {CeoSection.map((item, index) => (
         <SectionWithImage key={index} {...item} />
       ))}
     </div>
