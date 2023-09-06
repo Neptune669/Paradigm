@@ -6,8 +6,10 @@ const SectionWithImage = ({
   flexDirection,
   textColor,
   fontSize,
+  name,
+  job,
 }) => {
-  const containerStyle = `flex flex-col gap-10  px-8 md:flex-row justify-between ${flexDirection}`;
+  const containerStyle = `flex flex-col gap-10 items-center px-8 md:flex-row justify-between ${flexDirection}`;
 
   return (
     <div className={containerStyle}>
@@ -16,12 +18,14 @@ const SectionWithImage = ({
         {title && <h2 className="mb-3 text-4xl font-bold">{title}</h2>}
         {text && (
           <p
-            className="max-w-md"
+            className="max-w-md mb-3 "
             style={{ color: textColor, fontSize: fontSize }}
           >
             {text}
           </p>
         )}
+        {name && <p className="mb-3 text-sm font-semibold p-main">{name}</p>}
+        {job && <h2 className="mb-3 text-sm ">{job}</h2>}
       </div>
       <div className="max-w-md">
         {image && (
