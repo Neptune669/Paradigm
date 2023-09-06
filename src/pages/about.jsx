@@ -17,14 +17,14 @@ const AboutUs = () => {
         <About />
         <Who />
       </main>
-      <div className="flex flex-col gap-16 mx-auto overflow-x-hidden max-w-7xl ">
+      <div className="flex flex-col gap-20 mx-auto overflow-x-hidden max-w-7xl ">
         <Vision />
         <Mission />
         <Ceo />
         <CeoTwo />
         <Team />
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 };
