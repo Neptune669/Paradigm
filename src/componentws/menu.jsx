@@ -6,7 +6,7 @@ export default function MyDropdown() {
   const [isOpen, setOpen] = useState(false);
   return (
     <Menu as="div" className="md:block lg:hidden">
-      <div className="flex flex-col items-center justify-end w-12 gap-2 ">
+      <div className="flex flex-col items-center justify-end gap-2 w-fit ">
         <Menu.Button>
           <Hamburger toggle={setOpen} size={25} label="menu" toggled={isOpen} />
         </Menu.Button>
