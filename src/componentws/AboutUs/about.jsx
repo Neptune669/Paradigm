@@ -1,8 +1,10 @@
+import strok from "../AboutUs/strok.svg";
 const About = () => {
   return (
-    <div className="px-8 mx-auto mt-16 bg-center bg-cover mb-28 max-w-7xl ">
+    <div className="relative px-8 mx-auto mt-16 bg-center bg-cover mb-28 max-w-7xl ">
       <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
         <div className="">
+          {/* <img className="absolute right-0 bottom-1/2" src={strok} alt="" /> */}
           <h1 className="text-[5.625rem] font-bold">About</h1>
           <p className="text-[#C0C0C0] ">
             Lorem ipsum dolor sit amet consectetur id integer
