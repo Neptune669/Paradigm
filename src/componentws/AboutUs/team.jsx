@@ -10,6 +10,8 @@ const cards = [
   },
   {
     icon: imgTwo,
+    name: "ahmed fathi",
+    job: "CEO of Paradigm",
   },
   {
     icon: img,
@@ -32,7 +34,11 @@ const Team = () => {
       <div className="grid gap-10 px-8 max-w-fit md:grid-cols-2 lg:grid-cols-3">
         {cards.map((item, index) => (
           <div key={index}>
-            <ImageWithBackground img={item.icon} />
+            <ImageWithBackground
+              img={item.icon}
+              name={item.name}
+              job={item.job}
+            />
           </div>
         ))}
       </div>
