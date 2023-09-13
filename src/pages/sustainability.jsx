@@ -14,6 +14,7 @@ const Sustainability = () => {
           <Sdg />
         </div>
       </main>
+      <Footer />
     </>
   );
 };
