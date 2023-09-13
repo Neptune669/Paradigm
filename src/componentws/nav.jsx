@@ -15,10 +15,10 @@ const Nav = () => {
         <Link className="text-lg font-medium" to="/services">
           Services
         </Link>
-        <Link className="text-[18px] font-medium" to="/sustainability">
+        <Link className="text-lg font-medium" to="/sustainability">
           Sustainability
         </Link>
-        <Link className="text-lg font-medium" to="/events">
+        <Link className="text-lg font-medium" to="/Events">
           Events
         </Link>
         <Link className="text-lg font-medium" to="/contact">
