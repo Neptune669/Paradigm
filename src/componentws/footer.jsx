@@ -31,7 +31,9 @@ const Footer = () => {
           <li>
             <a href="/Sustainability">Sustainability</a>
           </li>
-          <li>Events</li>
+          <li>
+            <a href="/events">Events</a>
+          </li>
           <li>
             <a href="/about">About</a>
           </li>

@@ -24,3 +24,6 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.active {
+  color: #50c1e4;
+}
