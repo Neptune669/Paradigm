@@ -7,7 +7,7 @@ import Home from "./pages/home";
 import AboutUs from "./pages/about";
 import Event from "./pages/events";
 import Suc from "./pages/sustainability";
-
+import Blog from "./pages/blog";
 function App() {
   return (
     <Router>
@@ -16,6 +16,7 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/events" element={<Event />} />
         <Route path="/sustainability" element={<Suc />} />
+        <Route path="/blogs" element={<Blog />} />
 
         <Route path="/" element={<Home />} />
       </Routes>

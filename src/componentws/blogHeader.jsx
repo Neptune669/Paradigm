@@ -1,9 +1,10 @@
 import CustomHeader from "./customHeader";
-const SucHero = () => {
+
+const BlogHero = () => {
   return (
-    <>
-      <div className="flex flex-col gap-6 mt-16">
-        <CustomHeader>sustainability</CustomHeader>
+    <section>
+      <div className="flex flex-col gap-3">
+        <CustomHeader>blog</CustomHeader>
         <p className="font-medium text-lg text-[#C0C0C0]">
           We strongly believe in the value of Corporate Social Responsibilities;
           It is a culturally embedded concept and a widely embraced social
@@ -14,8 +15,8 @@ const SucHero = () => {
           goals within the field of our practices.
         </p>
       </div>
-    </>
+    </section>
   );
 };
 
-export default SucHero;
+export default BlogHero;
