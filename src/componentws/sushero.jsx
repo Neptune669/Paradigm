@@ -2,7 +2,7 @@ import CustomHeader from "./customHeader";
 const SucHero = () => {
   return (
     <>
-      <div className="flex flex-col gap-6 mt-16">
+      <div className="flex flex-col gap-6 px-8 mt-16">
         <CustomHeader>sustainability</CustomHeader>
         <p className="font-medium text-lg text-[#C0C0C0]">
           We strongly believe in the value of Corporate Social Responsibilities;

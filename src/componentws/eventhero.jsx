@@ -1,10 +1,10 @@
+import CustomHeader from "./customHeader";
+
 const EventHero = () => {
   return (
     <>
-      <div className="flex flex-col gap-6 mt-16">
-        <h1 className="font-extrabold uppercase text-8xl text-gradient-blue">
-          events
-        </h1>
+      <div className="flex flex-col gap-6 px-8 mt-16">
+        <CustomHeader>events</CustomHeader>
         <p className="font-medium text-base text-[#C0C0C0]">
           We strongly believe in the value of Corporate Social Responsibilities;
           It is a culturally embedded concept and a widely embraced social

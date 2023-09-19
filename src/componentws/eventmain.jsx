@@ -1,6 +1,6 @@
 const EventMain = () => {
   return (
-    <section className="mt-10">
+    <section className="px-8 mt-10">
       <div className="flex items-center justify-between">
         <div className="flex flex-col gap-2">
           <h1 className="text-5xl font-bold ">

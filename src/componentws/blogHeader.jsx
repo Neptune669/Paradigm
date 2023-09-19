@@ -3,7 +3,7 @@ import CustomHeader from "./customHeader";
 const BlogHero = () => {
   return (
     <section>
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 mt-16">
         <CustomHeader>blog</CustomHeader>
         <p className="font-medium text-lg text-[#C0C0C0]">
           We strongly believe in the value of Corporate Social Responsibilities;

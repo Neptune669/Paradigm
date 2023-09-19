@@ -7,7 +7,7 @@ const Sdg = () => {
     },
   ];
   const Title = (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-8 px-8">
       {data.map((item, index) => (
         <div className="" key={index}>
           <p className="mb-3 text-sm font-semibold p-main">{item.header}</p>

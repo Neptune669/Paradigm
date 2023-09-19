@@ -8,6 +8,7 @@ import AboutUs from "./pages/about";
 import Event from "./pages/events";
 import Suc from "./pages/sustainability";
 import Blog from "./pages/blog";
+import Article from "./pages/article";
 function App() {
   return (
     <Router>
@@ -17,6 +18,7 @@ function App() {
         <Route path="/events" element={<Event />} />
         <Route path="/sustainability" element={<Suc />} />
         <Route path="/blogs" element={<Blog />} />
+        <Route path="/article" element={<Article />} />
 
         <Route path="/" element={<Home />} />
       </Routes>
