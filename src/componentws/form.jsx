@@ -15,7 +15,7 @@ export default function App() {
     /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-6 ">
       {/* register your input into the hook by invoking the "register" function */}
-      <div className="flex justify-between gap-4">
+      <div className="flex gap-4">
         <div className="flex flex-col gap-4">
           <label
             className="text-lg font-bold leading-tight tracking-wide text-white uppercase"
@@ -43,7 +43,7 @@ export default function App() {
           />
         </div>
       </div>
-      <div className="flex justify-between gap-4 mt-14">
+      <div className="flex gap-4 mt-14">
         <div className="flex flex-col gap-4">
           <label
             className="text-lg font-bold leading-tight tracking-wide text-white uppercase"
