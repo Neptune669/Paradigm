@@ -18,6 +18,9 @@ body {
 .p-main {
   color: #50c1e4;
 }
+.p-secondary {
+  color: #c0c0c0;
+}
 .text-gradient-blue {
   background: linear-gradient(180deg, #35c5e8 0%, #c5f4ff 100%);
   background-clip: text;
