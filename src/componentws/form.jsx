@@ -13,7 +13,7 @@ export default function App() {
 
   return (
     /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-6 ">
       {/* register your input into the hook by invoking the "register" function */}
       <div className="flex justify-between gap-4">
         <div className="flex flex-col gap-4">
@@ -71,13 +71,22 @@ export default function App() {
           />
         </div>
       </div>
-
+      <div className="inline-flex items-start justify-start w-full h-48 p-4 mt-10 border rounded-lg border-zinc-800">
+        <div className="text-white text-lg font-bold font-['Montserrat'] uppercase leading-tight tracking-wide">
+          Message
+        </div>
+      </div>
+      <div className="inline-flex items-start justify-center h-16 px-8 py-6 bg-white border border-white shadow w-60 rounded-3xl">
+        <div className="text-center text-zinc-950 text-lg font-semibold font-['Montserrat'] uppercase leading-tight tracking-wide">
+          Send Message
+        </div>
+      </div>
       {/* include validation with required or other standard HTML validation rules */}
-      <input {...register("exampleRequired", { required: true })} />
+      {/* <input {...register("exampleRequired", { required: true })} /> */}
       {/* errors will return when field validation fails  */}
       {errors.exampleRequired && <span>This field is required</span>}
 
-      <input type="submit" />
+      {/* <input type="submit" /> */}
     </form>
   );
 }
