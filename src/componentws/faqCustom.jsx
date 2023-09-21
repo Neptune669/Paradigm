@@ -7,7 +7,7 @@ export default function MyDisclosure() {
         <Disclosure>
           <Disclosure.Button className="flex items-center justify-between w-full max-w-4xl mx-auto text-2xl ">
             <div className="">
-              <h1 className="">Is team pricing available</h1>
+              <h1 className="">Are you open for new projects ?</h1>
             </div>
             <div className="">+</div>
           </Disclosure.Button>
@@ -21,7 +21,7 @@ export default function MyDisclosure() {
         <Disclosure>
           <Disclosure.Button className="flex items-center justify-between w-full max-w-4xl mx-auto text-2xl ">
             <div className="">
-              <h1 className="">Is team pricing available</h1>
+              <h1 className="">How long has the agency been running for ?</h1>
             </div>
             <div className="">+</div>
           </Disclosure.Button>
@@ -35,7 +35,7 @@ export default function MyDisclosure() {
         <Disclosure>
           <Disclosure.Button className="flex items-center justify-between w-full max-w-4xl mx-auto text-2xl ">
             <div className="">
-              <h1 className="">Is team pricing available</h1>
+              <h1 className="">Do you currently have career openings ?</h1>
             </div>
             <div className="">+</div>
           </Disclosure.Button>
@@ -49,7 +49,9 @@ export default function MyDisclosure() {
         <Disclosure>
           <Disclosure.Button className="flex items-center justify-between w-full max-w-4xl mx-auto text-2xl ">
             <div className="">
-              <h1 className="">Is team pricing available</h1>
+              <h1 className="">
+                Do you offer discounts for nonprofit companies ?
+              </h1>
             </div>
             <div className="">+</div>
           </Disclosure.Button>

@@ -5,13 +5,18 @@ import CustomHeader from "./customHeader";
 const Event = () => {
   return (
     <div className="px-8 mx-auto max-w-7xl">
-      <CustomHeader>event</CustomHeader>
+      {/* <CustomHeader>event</CustomHeader> */}
+      <p className="text-[#48AECD] uppercase text-sm font-semibold mb-2">
+        Events
+      </p>
       <div className="flex flex-col mb-16 md:flex-row md:justify-between md:items-center">
         <h2 className="mb-4 text-2xl font-medium md:text-3xl lg:text-4xl lg:mb-10 lg:w-10/12">
           Our Recent Events.
         </h2>
         <p className="flex items-center gap-1 font-semibold lg:justify-end">
-          <span className="lg:text-left">View All Events</span>
+          <a href="/events">
+            <span className="lg:text-left">View All Events</span>
+          </a>
           <span>
             <svg
               width="18"
@@ -42,7 +47,7 @@ const Event = () => {
         <li className="flex flex-col gap-10">
           <figure className="rounded-2xl aspect-square">
             <img
-              className="object-cover  rounded-2xl aspect-square"
+              className="object-cover rounded-2xl aspect-square"
               src={event}
               alt=""
             />
@@ -79,7 +84,7 @@ const Event = () => {
         <li className="flex flex-col gap-10">
           <figure className="rounded-2xl lg:aspect-square ">
             <img
-              className="object-cover  rounded-2xl aspect-square"
+              className="object-cover rounded-2xl aspect-square"
               src={hero}
               alt=""
             />

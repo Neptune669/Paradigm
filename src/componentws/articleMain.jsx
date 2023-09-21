@@ -15,7 +15,7 @@ const article = [
 ];
 const ArticleMain = () => {
   return (
-    <div className="flex flex-col max-w-4xl gap-4 mx-auto">
+    <div className="flex flex-col max-w-4xl gap-4 mx-auto mt-16">
       <div className="flex items-center ">
         <Link to="/blogs">
           <img className="inline-block mr-6" src={backarrow} alt="" /> BACK TO

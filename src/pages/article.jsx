@@ -1,7 +1,7 @@
 import Footer from "../componentws/footer";
 import Nav from "../componentws/nav";
 import ArticleMain from "../componentws/articleMain";
-import Form from "../componentws/form";
+import Form from "../componentws/articleForm";
 
 const Article = () => {
   return (

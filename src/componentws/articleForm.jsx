@@ -24,7 +24,8 @@ export default function App() {
             Full name
           </label>
           <input
-            className="inline-flex flex-col items-start justify-start gap-2 p-4 text-[#C0C0C0] bg-black border rounded-lg w-80 h-14 border-zinc-800 placeholder-[#C0C0C0]::placeholder"
+            type="text"
+            className="inline-flex flex-col items-start justify-start gap-2 p-4 text-[#C0C0C0] bg-black border rounded-lg  h-14 border-zinc-800 placeholder-[#C0C0C0]::placeholder"
             placeholder="John Carter"
             {...register("name", { required: true })}
           />
@@ -37,13 +38,14 @@ export default function App() {
             Email address
           </label>
           <input
-            className="inline-flex flex-col items-start justify-start gap-2 p-4 text-[#C0C0C0] bg-black border rounded-lg w-80 h-14 border-zinc-800 placeholder-[#C0C0C0]::placeholder"
+            type="email"
+            className="inline-flex flex-col items-start justify-start gap-2 p-4 text-[#C0C0C0] bg-black border rounded-lg  h-14 border-zinc-800 placeholder-[#C0C0C0]::placeholder"
             placeholder="example@email.com"
             {...register("email", { required: true })}
           />
         </div>
       </div>
-      <div className="flex gap-4 mt-14">
+      <div className="grid grid-cols-2 gap-4">
         <div className="flex flex-col gap-4">
           <label
             className="text-lg font-bold leading-tight tracking-wide text-white uppercase"
@@ -52,25 +54,27 @@ export default function App() {
             company
           </label>
           <input
-            className="inline-flex flex-col items-start justify-start gap-2 p-4 text-[#C0C0C0] bg-black border rounded-lg w-80 h-14 border-zinc-800 placeholder-[#C0C0C0]::placeholder"
-            placeholder="Ex. Facebook"
-            {...register("company", { required: true })}
+            className="inline-flex flex-col items-start justify-start gap-2 p-4 text-[#C0C0C0] bg-black border rounded-lg  h-14 border-zinc-800 placeholder-[#C0C0C0]::placeholder"
+            placeholder="EX.Facebook"
+            {...register("name", { required: true })}
           />
         </div>
         <div className="flex flex-col gap-4">
           <label
             className="text-lg font-bold leading-tight tracking-wide text-white uppercase"
-            htmlFor="phone"
+            htmlFor="number"
           >
-            Phone number
+            phone Number
           </label>
           <input
-            className="inline-flex flex-col items-start justify-start gap-2 p-4 text-[#C0C0C0] bg-black border rounded-lg w-80 h-14 border-zinc-800 placeholder-[#C0C0C0]::placeholder"
-            placeholder="(123) 456 - 7890"
-            {...register("phone", { required: true })}
+            type="tel"
+            className="inline-flex flex-col items-start justify-start gap-2 p-4 text-[#C0C0C0] bg-black border rounded-lg  h-14 border-zinc-800 placeholder-[#C0C0C0]::placeholder"
+            placeholder="(123) 456 789"
+            {...register("number", { required: true })}
           />
         </div>
       </div>
+
       <textarea
         placeholder="message"
         className="inline-flex items-start justify-start w-full h-48 p-4 mt-10 bg-black border rounded-lg placeholder:text-white placeholder:font-bold placeholder:text-lg border-zinc-800"
