@@ -1,7 +1,7 @@
 const EventMain = () => {
   return (
     <section className="px-8 mt-10">
-      <div className="flex items-center justify-between gap-24">
+      <div className="flex flex-col items-center justify-between gap-20 lg:flex-row md:gap-24">
         <div className="flex flex-col self-start gap-2 min-w-fit">
           <h1 className="text-5xl font-bold ">
             Large and short <br /> beautiful heading{" "}
