@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const CardPreview = ({ title, image, date }) => {
   return (
     <li className="relative flex flex-col justify-end overflow-hidden bg-white shadow-none h-80 rounded-xl ">
@@ -48,9 +50,9 @@ const BlogPostsList = () => {
           Our Recent Articles
         </h2>
         <p className="flex items-center gap-1 font-semibold">
-          <a href="/blogs">
+          <Link to="/blogs">
             <span>View All Articles</span>
-          </a>
+          </Link>
           <span>
             <svg
               width="18"

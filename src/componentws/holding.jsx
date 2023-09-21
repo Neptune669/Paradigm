@@ -2,7 +2,7 @@ const Holding = () => {
   return (
     <div className="flex flex-col justify-between px-8 mx-auto max-w-7xl md:flex-row">
       <div className="">
-        <div className="w-[668.44px] h-[688.85px] ">
+        <div className="lg:w-[40rem] w-80 lg:h-[43rem] flex flex-col gap-4 ">
           <div className="text-sm font-semibold leading-none uppercase text-main ">
             our group
           </div>
@@ -40,7 +40,7 @@ const Holding = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center md:flex-row md:flex">
+      <div className="flex-col items-center hidden lg:flex md:flex-row md:flex ">
         <div className="w-[664px] h-[643px] relative">
           <div className=" left-[133px] top-[151px] absolute">
             <div className="w-[188.59px] h-[201px] left-0 top-0 absolute">
