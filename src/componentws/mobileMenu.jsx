@@ -1,11 +1,11 @@
 import * as AlertDialog from "@radix-ui/react-alert-dialog";
 import { NavLink } from "react-router-dom";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const AlertDialogDemo = () => (
   <AlertDialog.Root className="relative">
     <AlertDialog.Trigger asChild>
-      <button className="text-violet11 gap-2   inline-flex h-[35px] items-center justify-center rounded-2xl  bg-black px-[15px] font-medium leading-none border  focus:shadow-black">
+      <button className=" gap-2   inline-flex h-[35px] items-center justify-center rounded-2xl  bg-black px-[15px] font-medium leading-none border-[#e5e7eb70] border ">
         Menu
         <svg
           xmlns="http://www.w3.org/2000/svg"
