@@ -2,8 +2,8 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import logo from "../assets/Vector.svg";
-
 import MyDropdown from "./menu";
+import MobileMenu from "./mobileMenu";
 
 const Nav = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -52,7 +52,7 @@ const Nav = () => {
         </NavLink>
       </div>
       <div className="lg:hidden">
-        <MyDropdown />{" "}
+        <MobileMenu />
       </div>
     </nav>
   );

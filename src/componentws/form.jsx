@@ -15,7 +15,7 @@ export default function App() {
     /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-6 ">
       {/* register your input into the hook by invoking the "register" function */}
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid gap-4 lg:grid-cols-2">
         <div className="flex flex-col gap-4">
           <label
             className="text-lg font-bold leading-tight tracking-wide text-white uppercase"
@@ -43,32 +43,34 @@ export default function App() {
           />
         </div>
       </div>
-      <div className="flex gap-4 mt-14">
-        <div className="flex flex-col gap-4">
-          <label
-            className="text-lg font-bold leading-tight tracking-wide text-white uppercase"
-            htmlFor="company"
-          >
-            company
-          </label>
-          <input
-            className="inline-flex flex-col items-start justify-start gap-2 p-4 text-[#C0C0C0] bg-black border rounded-lg w-80 h-14 border-zinc-800 placeholder-[#C0C0C0]::placeholder"
-            placeholder="Ex. Facebook"
-            {...register("company", { required: true })}
-          />
-        </div>
-        <div className="flex flex-col gap-4">
-          <label
-            className="text-lg font-bold leading-tight tracking-wide text-white uppercase"
-            htmlFor="phone"
-          >
-            Phone number
-          </label>
-          <input
-            className="inline-flex flex-col items-start justify-start gap-2 p-4 text-[#C0C0C0] bg-black border rounded-lg w-80 h-14 border-zinc-800 placeholder-[#C0C0C0]::placeholder"
-            placeholder="(123) 456 - 7890"
-            {...register("phone", { required: true })}
-          />
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+        <div className="flex flex-col gap-4 lg:flex-row mt-14">
+          <div className="flex flex-col gap-4">
+            <label
+              className="text-lg font-bold leading-tight tracking-wide text-white uppercase"
+              htmlFor="company"
+            >
+              company
+            </label>
+            <input
+              className="inline-flex flex-col items-start justify-start gap-2 p-4 text-[#C0C0C0] bg-black border rounded-lg w-80 h-14 border-zinc-800 placeholder-[#C0C0C0]::placeholder"
+              placeholder="Ex. Facebook"
+              {...register("company", { required: true })}
+            />
+          </div>
+          <div className="flex flex-col gap-4">
+            <label
+              className="text-lg font-bold leading-tight tracking-wide text-white uppercase"
+              htmlFor="phone"
+            >
+              Phone number
+            </label>
+            <input
+              className="inline-flex flex-col items-start justify-start gap-2 p-4 text-[#C0C0C0] bg-black border rounded-lg w-80 h-14 border-zinc-800 placeholder-[#C0C0C0]::placeholder"
+              placeholder="(123) 456 - 7890"
+              {...register("phone", { required: true })}
+            />
+          </div>
         </div>
       </div>
       <textarea
