@@ -53,6 +53,13 @@ const NewMenu = () => (
           <NavLink
             className="text-lg font-medium border-b border-[#c0c0c0] w-full text-center pb-2 "
             exact
+            to="/"
+          >
+            Home
+          </NavLink>
+          <NavLink
+            className="text-lg font-medium border-b border-[#c0c0c0] w-full text-center pb-2 "
+            exact
             to="/about"
           >
             About us
