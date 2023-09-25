@@ -28,7 +28,7 @@ const NewMenu = () => (
         <Dialog.Title className=" m-0 text-[17px] font-medium ">
           <ul className="flex items-center justify-between mb-4">
             <li>Navigation</li>
-            <Dialog.DialogClose>
+            <Dialog.Close asChild>
               <li>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@ const NewMenu = () => (
                   />
                 </svg>
               </li>
-            </Dialog.DialogClose>
+            </Dialog.Close>
           </ul>
         </Dialog.Title>
 
