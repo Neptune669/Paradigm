@@ -10,7 +10,7 @@ const cards = [
   },
   {
     icon: imgTwo,
-    name: "ahmed fathi",
+    name: "mohamed amer",
     job: "CEO of Paradigm",
   },
   {
@@ -21,6 +21,8 @@ const cards = [
   },
   {
     icon: img,
+    name: "mohamed amer",
+    job: "CEO of Paradigm",
   },
   {
     icon: img,

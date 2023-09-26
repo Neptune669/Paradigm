@@ -1,11 +1,11 @@
 import strok from "../AboutUs/strok.svg";
+import CustomHeader from "../customHeader";
 const About = () => {
   return (
     <div className="relative px-8 mx-auto mt-16 bg-center bg-cover mb-28 max-w-7xl ">
       <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
-        <div className="">
-          {/* <img className="absolute right-0 bottom-1/2" src={strok} alt="" /> */}
-          <h1 className="text-[5.625rem] font-bold">About</h1>
+        <div className="flex flex-col gap-8">
+          <CustomHeader>ABOUT </CustomHeader>
           <p className="text-[#C0C0C0] ">
             Lorem ipsum dolor sit amet consectetur id integer
             <br /> ipsum tristique tellus adipiscing ornare eget eu

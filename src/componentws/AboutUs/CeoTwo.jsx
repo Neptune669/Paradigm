@@ -1,5 +1,6 @@
 import SectionWithImage from "./custom";
 import log from "../AboutUs/log.svg";
+import CeoCustom from "./CeoCustom";
 const CeoTwoSection = [
   {
     header: "ceo word",
@@ -17,7 +18,7 @@ const CeoTwo = () => {
   return (
     <div className="">
       {CeoTwoSection.map((item, index) => (
-        <SectionWithImage key={index} {...item} />
+        <CeoCustom key={index} {...item} />
       ))}
     </div>
   );

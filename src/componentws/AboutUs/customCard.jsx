@@ -5,14 +5,16 @@ const ImageWithBackground = ({ img, name, job }) => {
       <figure className="relative flex items-center justify-center group">
         <img src={back} alt="" />
         <img className="absolute bottom-0 :" src={img} alt="" />
-        <div className="absolute bottom-0 flex flex-col items-center gap-0 group-hover:visible ">
+        <div className="absolute bottom-0 flex flex-col items-center gap-0 text-3xl group-hover:visible ">
           {name && (
-            <p className="visible mb-3 text-lg font-semibold lg:hidden group-hover:block p-main">
+            <p className="visible mb-3 font-semibold lg:hidden group-hover:block p-main">
               {name}
             </p>
           )}
           {job && (
-            <h2 className="mb-3 text-sm lg:hidden group-hover:block">{job}</h2>
+            <h2 className="mb-3 text-sm font-medium lg:hidden group-hover:block">
+              {job}
+            </h2>
           )}
         </div>
       </figure>

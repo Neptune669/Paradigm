@@ -7,77 +7,78 @@ const SucCard = () => {
       id: "1",
     },
     {
-      text: "No poverty",
+      text: "Zero hunger",
       id: "2",
     },
     {
-      text: "No poverty",
+      text: "Good health and well-being",
       id: "3",
     },
     {
-      text: "No poverty",
+      text: "Quality education",
       id: "4",
     },
     {
-      text: "No poverty",
+      text: "Gender equality",
       id: "5",
     },
     {
-      text: "No poverty",
+      text: "Clean water and sanitation",
       id: "6",
     },
     {
-      text: "No poverty",
+      text: "Affordable and clean energy",
       id: "7",
     },
     {
-      text: "No poverty",
+      text: "Decent work and economic growth",
       id: "8",
     },
     {
-      text: "No poverty",
+      text: "Industry, innovation and infrastructure",
       id: "9",
     },
     {
-      text: "No poverty",
+      text: "Reduced inequalities",
       id: "10",
     },
     {
-      text: "No poverty",
+      text: "Sustainable cities and communities",
       id: "11",
     },
     {
-      text: "No poverty",
+      text: "Responsible consumption and production",
       id: "12",
     },
     {
-      text: "No poverty",
+      text: "Climate action",
       id: "13",
     },
     {
-      text: "No poverty",
+      text: "Life Below Water",
       id: "14",
     },
     {
-      text: "No poverty",
+      text: "Life on land",
       id: "15",
     },
     {
-      text: "No poverty",
+      text: "Peace, justice and strong institutions",
       id: "16",
     },
     {
-      text: "No poverty",
+      text: "Partnerships for the goals",
       id: "17",
     },
   ];
   return (
     <>
-      <div className="grid grid-cols-1 gap-6 px-8 md:grid-cols-2 lg:grid-cols-3 gap-y-8">
+      <div className="grid grid-cols-1 px-8 gap-x-3 md:grid-cols-2 lg:grid-cols-3 lg:gap-y-16 lg:gap-x-6">
         {data.map((item, index) => (
           <CustomCard
             key={index}
             icon={`/icons/${item.id}.svg`}
+            border={`b${item.id}`}
             text={item.text}
           />
         ))}

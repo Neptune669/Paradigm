@@ -9,12 +9,12 @@ const SectionWithImage = ({
   name,
   job,
 }) => {
-  const containerStyle = `flex flex-col gap-0  items-center px-8 md:flex-row justify-between ${flexDirection}`;
+  const containerStyle = `flex flex-col   items-center px-8 md:flex-row justify-between ${flexDirection}`;
 
   return (
     <div className={containerStyle}>
       <div className="">
-        {header && <p className="mb-3 text-sm p-main">{header}</p>}
+        {header && <p className="mb-3 text-sm font-medium p-main">{header}</p>}
         {title && <h2 className="mb-3 text-4xl font-bold">{title}</h2>}
         {text && (
           <p

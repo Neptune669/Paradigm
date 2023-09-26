@@ -44,7 +44,7 @@ const Nav = () => {
           className={`text-lg font-medium ${activeIndex === 4 ? "active" : ""}`}
           to="/blogs"
         >
-          Blogs
+          Blog
         </NavLink>
         <NavLink
           className={`text-lg font-medium ${activeIndex === 5 ? "active" : ""}`}

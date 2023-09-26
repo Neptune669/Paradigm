@@ -2,6 +2,7 @@ import timer from "../assets/timer.svg";
 import ticket from "../assets/ticket.svg";
 import star from "../assets/star.svg";
 import rocket from "../assets/rocket.svg";
+import bg from "../assets/aboutbg.svg";
 
 const items = [
   {
@@ -24,7 +25,19 @@ const items = [
 
 const About = () => {
   return (
-    <div className="flex flex-col px-8 mx-auto max-w-7xl lg:items-baseline">
+    <div className="relative z-10 flex flex-col px-8 mx-auto max-w-7xl lg:items-baseline">
+      {/* <div
+        style={{
+          backgroundImage: `url(${bg})`,
+          width: "30rem",
+          height: "100%",
+          position: "absolute",
+          right: "0",
+
+          backgroundRepeat: "no-repeat",
+        }}
+        className="absolute w-[30rem] right-0 -z-10"
+      ></div> */}
       <p className="text-[#48AECD] uppercase text-sm font-semibold mb-2">
         About us
       </p>
@@ -34,7 +47,7 @@ const About = () => {
           How Are We Empowering Business to succeed.
         </h2>
       </div>
-      <ul className="grid grid-cols-1 gap-10 mb-6 md:grid-cols-2 lg:grid-cols-4">
+      <ul className="z-10 grid grid-cols-1 gap-10 mb-6 md:grid-cols-2 lg:grid-cols-4">
         {items.map((item, index) => (
           <li key={index} className="border border-[#2E2E2E] rounded-2xl">
             <div className="flex flex-col items-center gap-5 px-4 text-center py-7">
