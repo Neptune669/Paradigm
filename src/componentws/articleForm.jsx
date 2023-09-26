@@ -89,9 +89,13 @@ export default function App() {
           className="inline-flex items-start justify-start w-full h-48 p-4 mt-10 bg-black border rounded-lg placeholder:text-white placeholder:font-bold placeholder:text-lg border-zinc-800"
         ></textarea>
         <div className="inline-flex items-start self-end justify-center h-16 px-8 py-6 bg-white border border-white rounded-full shadow w-60 ">
-          <div className="text-right  text-zinc-950 text-lg font-semibold font-['Montserrat'] uppercase leading-tight tracking-wide">
+          <input
+            type="submit"
+            value="submit"
+            className="text-right  text-zinc-950 text-lg font-semibold font-['Montserrat'] uppercase leading-tight tracking-wide"
+          >
             get in touch
-          </div>
+          </input>
         </div>
         {/* include validation with required or other standard HTML validation rules */}
         {/* <input {...register("exampleRequired", { required: true })} /> */}

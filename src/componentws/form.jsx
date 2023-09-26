@@ -78,7 +78,7 @@ export default function App() {
         className="inline-flex items-start justify-start w-full h-48 p-4 mt-10 bg-black border rounded-lg placeholder:text-white placeholder:font-bold placeholder:text-lg border-zinc-800"
       ></textarea>
       <div className="inline-flex items-start justify-center h-16 px-8 py-6 bg-white border border-white shadow w-60 rounded-3xl">
-        <div className="text-center text-zinc-950 text-lg font-semibold font-['Montserrat'] uppercase leading-tight tracking-wide">
+        <div className="text-lg font-semibold leading-tight tracking-wide text-center uppercase text-zinc-950">
           Send Message
         </div>
       </div>

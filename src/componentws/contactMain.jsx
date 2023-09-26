@@ -7,7 +7,7 @@ const ContactMain = () => {
   return (
     <>
       <div className="flex justify-between gap-8 py-16 max-w-fit">
-        <div className="flex flex-col gap-8 border-r-2 border-[#2F2F2F]">
+        <div className="flex min-w-fit flex-col gap-8 border-r-2 border-[#2F2F2F]">
           <div className="">
             <ul className="flex flex-col gap-2 pr-4">
               <li className="text-3xl font-bold uppercase">
