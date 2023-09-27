@@ -2,7 +2,7 @@ import logo from "../assets/Vector.svg";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <footer className="px-8 pb-3 mt-20 max-w-7xl lg:mx-auto">
+    <footer className="px-8 py-16 mt-20 max-w-7xl lg:mx-auto">
       <div className="flex flex-col gap-2">
         <h2 className="">
           <img src={logo} alt="" />
