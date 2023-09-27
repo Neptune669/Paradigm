@@ -10,6 +10,7 @@ import Suc from "./pages/sustainability";
 import Blog from "./pages/blog";
 import Article from "./pages/article";
 import Contact from "./pages/contact";
+import Services from "./pages/services";
 function App() {
   return (
     <Router>
@@ -21,6 +22,7 @@ function App() {
         <Route path="/blogs" element={<Blog />} />
         <Route path="/article" element={<Article />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/services" element={<Services />} />
 
         <Route path="/" element={<Home />} />
       </Routes>

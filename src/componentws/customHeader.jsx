@@ -1,6 +1,6 @@
 const CustomHeader = ({ children }) => {
   return (
-    <h1 className="text-4xl font-extrabold uppercase md:text-7xl lg:text-8xl text-gradient-blue">
+    <h1 className="overflow-hidden text-4xl font-extrabold uppercase md:text-7xl lg:text-8xl text-gradient-blue">
       {children}
     </h1>
   );
