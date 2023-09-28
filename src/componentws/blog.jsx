@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
-
+import BlogOneImg from "../assets/BlogImg.svg";
+import BlogImgTwo from "../assets/BlogImg two.svg";
+import BlogImgThree from "../assets/BlogImg three.svg";
 const CardPreview = ({ title, image, date }) => {
   return (
-    <li className="relative flex flex-col justify-end overflow-hidden bg-white shadow-none h-80 rounded-xl ">
+    <li className="relative flex flex-col justify-end overflow-hidden shadow-none h-80 rounded-xl ">
       {image && (
         <figure className="rounded-xl">
           <div className="absolute inset-0 z-20 opacity-50 bg-gradient-to-b from-transparent to-black"></div>
@@ -22,20 +24,17 @@ const CardPreview = ({ title, image, date }) => {
 const blogs = [
   {
     title: "What Event Organizers Need to Know",
-    image:
-      "https://images.pexels.com/photos/3379261/pexels-photo-3379261.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: BlogOneImg,
     date: "April 1, 2022",
   },
   {
     title: "What Event Organizers Need to Know",
-    image:
-      "https://images.pexels.com/photos/3379261/pexels-photo-3379261.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: BlogImgTwo,
     date: "April 1, 2022",
   },
   {
     title: "What Event Organizers Need to Know",
-    image:
-      "https://images.pexels.com/photos/3379261/pexels-photo-3379261.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: BlogImgThree,
     date: "April 1, 2022",
   },
 ];
