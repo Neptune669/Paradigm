@@ -5,7 +5,7 @@ import dot from "../assets/dot.svg";
 const ListItem = ({ text }) => (
   <>
     {text && (
-      <li className="text-base font-bold poppins-font">
+      <li className="text-base font-bold w-fit poppins-font">
         <img className="inline-block mr-2" src={dot} alt="" />
         {text}
       </li>
@@ -25,18 +25,18 @@ const AnotherListItem = ({
   <>
     {textHeader && (
       <li className="font-bold poppins-font">
-        <img className="inline-block mr-2" src={dot} alt="" />
+        <img className="inline-block mr-2 w-fit " src={dot} alt="" />
         {textHeader}
       </li>
     )}
-    <li className=" poppins-font">{text}</li>
+    <li className="text-sm poppins-font lg:text-base">{text}</li>
     {secondTextHeader && (
-      <li className="mt-4 font-bold poppins-font ">
+      <li className="mt-4 font-bold poppins-font w-fit ">
         <img className="inline-block mr-2" src={dot} alt="" />
         {secondTextHeader}
       </li>
     )}
-    <li className=" poppins-font">{secondText}</li>
+    <li className=" poppins-font w-fit">{secondText}</li>
     {thirdTextHeader && (
       <li className="mt-4 font-bold poppins-font">
         <img className="inline-block mr-2" src={dot} alt="" />
@@ -59,9 +59,13 @@ const CustomSection = ({
     listStyle === "another" ? AnotherListItem : ListItem;
 
   return (
-    <section className={`flex ${flexDirection} justify-between gap-11`}>
+    <section
+      className={`flex flex-col md:${flexDirection} justify-between gap-11 `}
+    >
       <div className="flex flex-col gap-7 w-[38rem]">
-        <h1 className="text-5xl font-bold ">{title}</h1>
+        <h1 className="w-1/2 text-3xl font-bold lg:w-fit lg:text-4xl ">
+          {title}
+        </h1>
         <ul className="flex flex-col gap-2">
           {listItem.map((item, index) => (
             <ListItemComponent

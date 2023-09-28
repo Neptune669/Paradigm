@@ -126,7 +126,7 @@ const sectionData = [
 ];
 const ServicesMain = () => {
   return (
-    <main className="flex flex-col gap-28">
+    <main className="flex flex-col px-8 overflow-hidden gap-28">
       {sectionData.map((item, index) => (
         <CustomSection key={index} {...item} />
       ))}

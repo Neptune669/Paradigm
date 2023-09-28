@@ -4,7 +4,7 @@ const ServicesHeader = () => {
   return (
     <>
       <section>
-        <header className="flex flex-col gap-3 mt-16">
+        <header className="flex flex-col gap-3 px-8 mt-16">
           <CustomHeader>our services</CustomHeader>
           <p className="font-medium text-lg text-[#C0C0C0]">
             We strongly believe in the value of Corporate Social
