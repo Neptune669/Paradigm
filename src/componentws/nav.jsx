@@ -15,7 +15,7 @@ const Nav = () => {
       <Link to="/">
         <img className="w-[12.5rem] lg:w-full" src={logo} alt="" />
       </Link>
-      <div className="hidden gap-10 lg:flex ">
+      <div className="items-center hidden gap-10 lg:flex ">
         <NavLink
           className={`text-lg font-medium ${activeIndex === 1 ? "active" : ""}`}
           to="/about"
@@ -41,16 +41,24 @@ const Nav = () => {
           Events
         </NavLink>
         <NavLink
-          className={`text-lg font-medium ${activeIndex === 4 ? "active" : ""}`}
+          className={`text-lg font-medium ${activeIndex === 5 ? "active" : ""}`}
           to="/blogs"
         >
           Blog
         </NavLink>
         <NavLink
-          className={`text-lg font-medium ${activeIndex === 5 ? "active" : ""}`}
+          className={`text-lg font-medium ${activeIndex === 6 ? "active" : ""}`}
           to="/contact"
         >
           Contact
+        </NavLink>
+        <NavLink
+          className={`text-lg font-bold bg-[#35C5E8] p-2 rounded-full  text-black ${
+            activeIndex === 7 ? "text-white" : ""
+          }`}
+          to="/contact"
+        >
+          get in touch
         </NavLink>
       </div>
       <div className="lg:hidden">
