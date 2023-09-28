@@ -3,7 +3,7 @@ import CustomHeader from "./customHeader";
 const ContactHeader = () => {
   return (
     <>
-      <div className="flex justify-between gap-3 mt-16">
+      <div className="flex flex-col justify-between gap-3 mt-16 lg:flex-row">
         <div className="w-[100rem]">
           <CustomHeader>
             Let’s work <br />

@@ -13,18 +13,21 @@ export default function App() {
 
   return (
     /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
-    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-6 ">
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className="flex flex-col gap-6 mx-auto "
+    >
       {/* register your input into the hook by invoking the "register" function */}
       <div className="grid gap-4 lg:grid-cols-2">
         <div className="flex flex-col gap-4">
           <label
-            className="text-lg font-bold leading-tight tracking-wide text-white uppercase"
+            className="text-lg font-bold leading-tight tracking-wide text-white uppercase "
             htmlFor="name"
           >
             Full name
           </label>
           <input
-            className="inline-flex flex-col items-start justify-start gap-2 p-4 text-[#C0C0C0] bg-black border rounded-lg w-80 h-14 border-zinc-800 placeholder-[#C0C0C0]::placeholder"
+            className="inline-flex flex-col items-start justify-start gap-2 p-4 text-[#C0C0C0] bg-black border rounded-lg w-72 lg:w-80 h-14 border-zinc-800 placeholder-[#C0C0C0]::placeholder"
             placeholder="John Carter"
             {...register("name", { required: true })}
           />
@@ -37,7 +40,7 @@ export default function App() {
             Email address
           </label>
           <input
-            className="inline-flex flex-col items-start justify-start gap-2 p-4 text-[#C0C0C0] bg-black border rounded-lg w-80 h-14 border-zinc-800 placeholder-[#C0C0C0]::placeholder"
+            className="inline-flex flex-col items-start justify-start gap-2 p-4 text-[#C0C0C0] bg-black border rounded-lg w-72 lg:w-80 h-14 border-zinc-800 placeholder-[#C0C0C0]::placeholder"
             placeholder="example@email.com"
             {...register("email", { required: true })}
           />
@@ -53,7 +56,7 @@ export default function App() {
               company
             </label>
             <input
-              className="inline-flex flex-col items-start justify-start gap-2 p-4 text-[#C0C0C0] bg-black border rounded-lg w-80 h-14 border-zinc-800 placeholder-[#C0C0C0]::placeholder"
+              className="inline-flex flex-col items-start justify-start gap-2 p-4 text-[#C0C0C0] bg-black border rounded-lg w-72 lg:w-80 h-14 border-zinc-800 placeholder-[#C0C0C0]::placeholder"
               placeholder="Ex. Facebook"
               {...register("company", { required: true })}
             />
@@ -66,7 +69,7 @@ export default function App() {
               Phone number
             </label>
             <input
-              className="inline-flex flex-col items-start justify-start gap-2 p-4 text-[#C0C0C0] bg-black border rounded-lg w-80 h-14 border-zinc-800 placeholder-[#C0C0C0]::placeholder"
+              className="inline-flex flex-col items-start justify-start gap-2 p-4 text-[#C0C0C0] bg-black border rounded-lg w-72 lg:w-80 h-14 border-zinc-800 placeholder-[#C0C0C0]::placeholder"
               placeholder="(123) 456 - 7890"
               {...register("phone", { required: true })}
             />

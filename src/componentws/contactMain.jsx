@@ -6,8 +6,8 @@ import Form from "./form";
 const ContactMain = () => {
   return (
     <>
-      <div className="flex justify-between gap-8 py-16 max-w-fit">
-        <div className="flex min-w-fit flex-col gap-8 border-r-2 border-[#2F2F2F]">
+      <main className="flex flex-col justify-between gap-8 py-16 lg:flex-row max-w-fit">
+        <section className="flex min-w-fit flex-col gap-8 lg:border-r-2 lg:border-[#2F2F2F] ">
           <div className="">
             <ul className="flex flex-col gap-2 pr-4">
               <li className="text-3xl font-bold uppercase">
@@ -84,12 +84,12 @@ const ContactMain = () => {
               </ul>
             </ul>
           </div>
-        </div>
+        </section>
 
-        <div className="mx-auto ">
+        <section className="mx-auto ">
           <Form />
-        </div>
-      </div>
+        </section>
+      </main>
     </>
   );
 };

@@ -2,39 +2,39 @@ const BranchCard = ({ branch }) => {
   const { location, phone, email } = branch;
 
   return (
-    <div className="relative -z-10">
+    <main className="relative -z-10">
       <figure className="">
         <img className="w-full " src={branch.image} alt="" />
       </figure>
-      <div className="absolute z-50 mx-auto bottom-5 left-28">
-        <div className="grid items-center self-center grid-cols-3 gap-4">
-          <div className="inline-flex flex-col items-start justify-start gap-2 pr-6">
-            <div className="text-xl font-normal leading-snug tracking-wider uppercase text-neutral-200">
+      <section className="absolute bottom-0 z-50 left-3 lg:bottom-5 lg:left-28">
+        <ul className="items-center self-center justify-center grid-cols-1 gap-4 lg:grid lg:grid-cols-3">
+          <ul className="inline-flex items-center justify-start gap-2 pr-6 lg:items-start lg:flex-col">
+            <li className="text-xs font-normal leading-snug tracking-wider uppercase lg:text-xl text-neutral-200">
               Location:
-            </div>
-            <div className="text-3xl font-bold leading-10 text-white uppercase">
+            </li>
+            <li className="text-xs font-bold leading-10 text-white uppercase lg:text-3xl">
               {location}
-            </div>
-          </div>
-          <div className="pr-0.5 flex-col justify-start items-start gap-2 inline-flex">
-            <div className="text-xl font-normal leading-snug tracking-wider uppercase text-neutral-200">
+            </li>
+          </ul>
+          <ul className="inline-flex items-center justify-start gap-2 pr-6 lg:items-start lg:flex-col">
+            <li className="text-xs font-normal leading-snug tracking-wider uppercase lg:text-xl text-neutral-200">
               Phone:
-            </div>
-            <div className="text-3xl font-bold leading-10 text-white uppercase">
+            </li>
+            <li className="text-xs font-bold leading-10 text-white uppercase lg:text-3xl">
               {phone}
-            </div>
-          </div>
-          <div className="inline-flex flex-col items-start justify-start gap-2 pr-9">
-            <div className="text-xl font-normal leading-snug tracking-wider uppercase text-neutral-200">
+            </li>
+          </ul>
+          <ul className="inline-flex items-center justify-start gap-2 pr-6 lg:items-start lg:flex-col">
+            <li className="text-xs font-normal leading-snug tracking-wider uppercase lg:text-xl text-neutral-200">
               Email:
-            </div>
-            <div className="text-3xl font-bold leading-10 text-white uppercase">
+            </li>
+            <li className="text-xs font-bold leading-10 text-white uppercase lg:text-3xl">
               {email}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            </li>
+          </ul>
+        </ul>
+      </section>
+    </main>
   );
 };
 
