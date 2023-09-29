@@ -7,6 +7,7 @@ import Ceo from "../componentws/AboutUs/ceo";
 import Footer from "../componentws/footer";
 import Team from "../componentws/AboutUs/team";
 import CeoTwo from "../componentws/AboutUs/CeoTwo";
+import AboutHolding from "../componentws/AboutUs/aboutHolding";
 const AboutUs = () => {
   return (
     <>
@@ -22,6 +23,7 @@ const AboutUs = () => {
         <Mission />
         <Ceo />
         <CeoTwo />
+        <AboutHolding />
         <Team />
         <Footer />
       </div>
