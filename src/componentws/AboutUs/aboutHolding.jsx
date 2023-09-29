@@ -34,9 +34,13 @@ const HoldingData = [
 const AboutHolding = () => {
   return (
     <main>
-      <p className="mb-3 text-sm font-semibold p-main">our group</p>
-      <h2 className="mb-3 text-5xl font-bold">Paradigm Holding</h2>
-      <section className="grid grid-cols-2 gap-x-5 gap-y-4">
+      <div className="flex flex-col px-8 md:px-0">
+        <p className="mb-3 text-sm font-semibold p-main">our group</p>
+        <h2 className="mb-3 text-3xl font-bold md:text-5xl">
+          Paradigm Holding
+        </h2>
+      </div>
+      <section className="grid md:grid-cols-2 gap-x-5 gap-y-4">
         {HoldingData.map((data, index) => (
           <HoldingCard
             key={index}
