@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import logo from "../assets/Vector.svg";
+import whats from "../assets/whatsapp.svg";
 // import MyDropdown from "./menu";
 import MobileMenu from "./mobileMenu";
 
@@ -52,13 +53,9 @@ const Nav = () => {
         >
           Contact
         </NavLink>
-        <NavLink
-          className={`text-lg font-bold bg-[#35C5E8] p-2 rounded-full  text-black ${
-            activeIndex === 7 ? "text-white" : ""
-          }`}
-          to="/contact"
-        >
-          get in touch
+        <NavLink className="text-[#25D366] flex gap-2 text-lg font-bold" to="/">
+          <img src={whats} alt="whatsapp icon" />
+          Chat via Whatsapp
         </NavLink>
       </div>
       <div className="lg:hidden">

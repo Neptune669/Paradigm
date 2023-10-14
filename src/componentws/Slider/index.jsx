@@ -3,75 +3,75 @@ import cn from "classnames";
 import SliderWrapper from "./_SlickSliderStyle";
 
 const Slide = ({ image, title, description }) => {
-	return (
-		<div className="w-full py-12 h-[60vh] md:h-[65vh] px-4 lg:px-0 relative flex items-center rounded-2xl ">
-			{/* {image && (
+  return (
+    <div className="w-full py-12 h-[60vh] md:h-[65vh]  px-4 lg:px-0 relative flex items-center rounded-2xl ">
+      {/* {image && (
 				<img
 					src={image}
 					className={"w-full h-full absolute z-0 object-cover"}
 				/>
 			)} */}
-			<div
-				className={cn(
-					image &&
-						"hero-image bg-black bg-opacity-40 w-full h-full absolute z-0"
-				)}
-			></div>
-			<div className="mx-auto w-full flex flex-col z-20">
-				<div className=" md:w-8/12 xl:w-5/12">
-					{title && (
-						<h2 className="text-white font-bold text-xl md:text-2xl lg:text-4xl">
-							{title}
-						</h2>
-					)}
-					{description && (
-						<p className="mt-8 mb-6 text-sm md:text-base text-white">
-							{description}
-						</p>
-					)}
-				</div>
-			</div>
-		</div>
-	);
+      <div
+        className={cn(
+          image &&
+            "hero-image bg-[#010f13] bg-opacity-40 w-full h-full absolute z-0"
+        )}
+      ></div>
+      <div className="z-20 flex flex-col w-full mx-auto">
+        <div className=" md:w-8/12 xl:w-5/12">
+          {title && (
+            <h2 className="text-xl font-bold text-white md:text-2xl lg:text-4xl">
+              {title}
+            </h2>
+          )}
+          {description && (
+            <p className="mt-8 mb-6 text-sm text-white md:text-base">
+              {description}
+            </p>
+          )}
+        </div>
+      </div>
+    </div>
+  );
 };
 const HomeSlider = ({ slides }) => {
-	const settings = {
-		dots: true,
-		autoplay: true,
-		autoplaySpeed: 4000,
-		infinite: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		initialSlide: 0,
-		speed: 500,
-		arrows: false,
-		appendDots: (dots) => <ul>{dots}</ul>,
-		customPaging: () => (
-			<div className="ft-slick__dots--custom">
-				<div className="loading" />
-			</div>
-		),
-	};
-	return (
-		<div className="max-w-7xl px-8 w-full  mx-auto">
-			<SliderWrapper>
-				<Slider {...settings}>
-					{slides &&
-						slides.map &&
-						slides.map((item) => {
-							return (
-								<ul key={item._key}>
-									<Slide
-										title={item.title}
-										description={item.description}
-										image={item.image}
-									/>
-								</ul>
-							);
-						})}
-				</Slider>
-			</SliderWrapper>
-		</div>
-	);
+  const settings = {
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    speed: 500,
+    arrows: false,
+    appendDots: (dots) => <ul>{dots}</ul>,
+    customPaging: () => (
+      <div className="ft-slick__dots--custom">
+        <div className="loading" />
+      </div>
+    ),
+  };
+  return (
+    <div className="w-full px-8 mx-auto max-w-7xl">
+      <SliderWrapper>
+        <Slider {...settings}>
+          {slides &&
+            slides.map &&
+            slides.map((item) => {
+              return (
+                <ul key={item._key}>
+                  <Slide
+                    title={item.title}
+                    description={item.description}
+                    image={item.image}
+                  />
+                </ul>
+              );
+            })}
+        </Slider>
+      </SliderWrapper>
+    </div>
+  );
 };
 export default HomeSlider;

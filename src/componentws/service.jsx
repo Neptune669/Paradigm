@@ -1,18 +1,18 @@
-// import mac from "../assets/Graphic Design.svg";
-// import chef from "../assets/Catering.svg";
+import mac from "../assets/Graphic Design.svg";
+import chef from "../assets/Catering.svg";
 import it from "../assets/Technical Support.svg";
 import tran from "../assets/Interpretation & Translation Services.svg";
-// import fire from "../assets/Entertainment.svg";
+import fire from "../assets/Entertainment.svg";
 import event from "../assets/Event Consultancy & Management..svg";
 import media from "../assets/Documentation & Media Production.svg";
 import vip from "../assets/Public Relations & VIP Management..svg";
-// import brand from "../assets/Branding, Production, and Printing.svg";
-// import travel from "../assets/Travel, Transportation & Accommodation.svg";
+import brand from "../assets/Branding, Production, and Printing.svg";
+import travel from "../assets/Travel, Transportation & Accommodation.svg";
 import audio from "../assets/Audio Visual Solutions.svg";
 
 const Card = ({ icon, title, description, link = "#" }) => {
   return (
-    <li className="border-4 border-[#121212] px-6 py-10 rounded-3xl flex flex-col">
+    <li className="border-4 border-[#042A37] px-6 py-10 rounded-3xl flex flex-col">
       {icon && (
         <figure className="mb-5">
           <img src={icon} alt="" />
@@ -21,7 +21,7 @@ const Card = ({ icon, title, description, link = "#" }) => {
       {title && (
         <h3 className="mb-3 text-2xl font-semibold text-white">{title}</h3>
       )}
-      {description && <p className="opacity-50  mb-14">{description}</p>}
+      {description && <p className="opacity-50 mb-14">{description}</p>}
       <a
         href={link}
         className="flex items-center gap-1 px-3 py-2 mt-auto text-sm font-medium lg:self-end "
@@ -79,6 +79,36 @@ const cards = [
   {
     icon: media,
     title: "Documentation & Media Production",
+    description: "Event consultancy & Management",
+    link: "#",
+  },
+  {
+    icon: travel,
+    title: "Travel, Transportation & Accommodation",
+    description: "Event consultancy & Management",
+    link: "#",
+  },
+  {
+    icon: mac,
+    title: "Graphic Design",
+    description: "Event consultancy & Management",
+    link: "#",
+  },
+  {
+    icon: brand,
+    title: "Branding, Production, and Printing",
+    description: "Event consultancy & Management",
+    link: "#",
+  },
+  {
+    icon: chef,
+    title: "Branding, Production, and Printing",
+    description: "Event consultancy & Management",
+    link: "#",
+  },
+  {
+    icon: fire,
+    title: "Entertainment",
     description: "Event consultancy & Management",
     link: "#",
   },
