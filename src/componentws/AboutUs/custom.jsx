@@ -9,7 +9,7 @@ const SectionWithImage = ({
   name,
   job,
 }) => {
-  const containerStyle = `flex flex-col   items-center px-8 md:flex-row justify-between ${flexDirection}`;
+  const containerStyle = `flex flex-col   justify-between  items-center px-8 md:flex-row  ${flexDirection}`;
 
   return (
     <div className={containerStyle}>

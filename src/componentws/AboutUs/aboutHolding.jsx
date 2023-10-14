@@ -25,11 +25,11 @@ const HoldingData = [
     description:
       "With over 12 years of experience and over 2500 successfully completed events. Paradigm Egypt is a market leader in event management, actively collaborating with the majority of UN agencies, multiple international and governmental organizations, in addition to an outstanding portfolio of corporate and high-level events.",
   },
-  {
-    logo: trans,
-    description:
-      "With over 12 years of experience and over 2500 successfully completed events. Paradigm Egypt is a market leader in event management, actively collaborating with the majority of UN agencies, multiple international and governmental organizations, in addition to an outstanding portfolio of corporate and high-level events.",
-  },
+  // {
+  //   logo: trans,
+  //   description:
+  //     "With over 12 years of experience and over 2500 successfully completed events. Paradigm Egypt is a market leader in event management, actively collaborating with the majority of UN agencies, multiple international and governmental organizations, in addition to an outstanding portfolio of corporate and high-level events.",
+  // },
 ];
 const AboutHolding = () => {
   return (

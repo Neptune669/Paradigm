@@ -18,14 +18,14 @@ const Slide = ({ image, title, description }) => {
         )}
       ></div>
       <div className="z-20 flex flex-col w-full mx-auto">
-        <div className=" md:w-8/12 xl:w-5/12">
+        <div className=" md:w-full xl:w-full">
           {title && (
-            <h2 className="text-xl font-bold text-white md:text-2xl lg:text-4xl">
+            <h2 className="w-[90%] text-xl font-bold text-white md:text-2xl lg:text-7xl">
               {title}
             </h2>
           )}
           {description && (
-            <p className="mt-8 mb-6 text-sm text-white md:text-base">
+            <p className="w-2/5 mt-8 mb-6 text-sm text-neutral-500 md:text-base">
               {description}
             </p>
           )}
